@@ -21,7 +21,7 @@ public class MongoUtils {
     public static MongoCollection<Document> getCollection(){
 
         try (MongoClient mongoClient = MongoClients.create(uri)) {
-            MongoDatabase database = mongoClient.getDatabase("deneme");
+            MongoDatabase database = mongoClient.getDatabase("mongotest");
             return database.getCollection("filmler");
         }
     }
